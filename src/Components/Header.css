@@ -1,0 +1,57 @@
+*{
+    font-family: 'Baloo Bhai';
+  }
+  .mid{
+    display: inline-block;
+    width: 100%;
+    margin: 0px auto;
+    
+    
+    
+  
+  }
+  .navbar{
+    position: relative;
+    top: -15px;
+  
+  }
+  .navbar li{
+    display: inline-block;
+    font-size: 25px;
+    box-sizing: border-box;
+    position: relative;
+    left: 552px;
+  }
+  .navbar li a{
+    color:rgb(168, 213, 239);
+    text-decoration: none;
+    margin: 2px 21px;
+    padding: 15px 12px;
+    font-size: 20px;
+    position: relative;
+    bottom: -4px;
+  }
+  .navbar li a:hover{
+    cursor: pointer;
+    background-color:rgb(168, 213, 239);
+    color:darkblue;
+    text-decoration: underline;
+    font-weight:bold;
+  }
+    
+  
+  .navbar{
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    height: 56px;
+    z-index: 1;
+    background-color: darkblue;
+    
+    
+  }
+  .header{
+    height: 60px;
+    
+  
+  }
