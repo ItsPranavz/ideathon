@@ -3,7 +3,7 @@ import './Footer.css';
 import reactlogo from "./my-logo.png";
  
 
-export default function App() {
+export default function Footer() {
   return (
     <div className="footer">
 
