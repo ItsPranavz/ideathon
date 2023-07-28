@@ -1,0 +1,65 @@
+*{
+    font-family: 'Baloo Bhai';
+    
+  }
+  .footer{
+    display: inline-block;
+    width: 100%;
+    margin: 0px auto;
+    /* border: 2px solid green; */
+    height: 70px;
+    /* position:absolute; */
+    bottom: 1px;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    background-color: darkblue;
+    
+  }
+  .footbar li{
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    color:rgb(168, 213, 239);
+    font-size: 23px;
+  }
+  .check{
+    height: 12000px;
+  }
+  .footbar li.rights{
+    /* border: 2px solid green; */
+    position: relative;
+    left: 765px;
+    font-size: 25px;
+  }
+  .footbar li.Copyright{
+    /* border: 2px solid green; */
+    position: relative;
+    left: 694px;
+  }
+  .footbar li.name{
+    /* border: 2px solid green; */
+    left: 206px;
+    font-size: 27px;
+    color: orange;
+  }
+  .footbar li.name:hover{
+    cursor: pointer;
+    color:rgb(168, 213, 239);
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: default;
+  }
+  .check{
+    display: inline-block;
+    position:relative;
+    top: 1500px;
+  }
+  img{
+    width: 46px;
+    height: 35px;
+    position: relative;
+    bottom: -6px;
+    right: -177px;
+  }
+  
