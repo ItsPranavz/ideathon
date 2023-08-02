@@ -1,0 +1,132 @@
+/* .container{
+    background-color: wheat;
+} */
+*{
+    font-family: 'Baloo Bhai';
+}
+
+body{
+    background-color: rgb(244, 241, 236);
+}
+.container {
+    /* border: 10px solid darkblue; */
+    height: 500px;
+    width: 1162px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 76px;
+    justify-content: center;
+    /* justify-content: space-between; */
+    border-radius: 40px;
+    background-color:wheat;
+
+}
+
+.subox {
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 426px;
+    margin: 29px;
+    width: 700px;
+    /* padding: 2px; */
+}
+#box2{
+    background-image: url('https://www.stonybrook.edu/commcms/advising/_undeclared/_images/atas%20card.jpg');
+    background-repeat: no-repeat;
+    background-size: 519px 427px;
+}
+#box1{
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+    /* color: rgb(61, 61, 210); */
+}
+
+.container2{
+    /* border: 10px solid darkblue; */
+    height: 500px;
+    width: 1162px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    top: 146px;
+    justify-content: center;
+    /* justify-content: space-between; */
+    border-radius: 40px;
+    background-color:skyblue;
+    /* padding: 15px; */
+
+}
+.subox2{
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 426px;
+    margin: 29px;
+    width: 700px;
+
+}
+#box22{
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+    color: darkblue;
+    
+}
+#box21{
+
+    /* color: rgb(61, 61, 210); */
+    background-image: url('https://www.ice.org.uk/media/jy4nzd52/engaging-communities-a-role-for-engineers.jpg');
+    background-repeat: no-repeat;
+    background-size: 519px 427px;
+}
+.container3{
+    /* border: 10px solid darkblue; */
+    height: 500px;
+    width: 1162px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    top: 220px;
+    justify-content: center;
+    /* justify-content: space-between; */
+    border-radius: 40px;
+    background-color:lightgoldenrodyellow;
+    /* padding: 15px; */
+
+}
+.subox2{
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 426px;
+    margin: 29px;
+    width: 700px;
+
+}
+.subox3{
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 426px;
+    margin: 29px;
+    width: 700px;
+
+}
+#box32{
+
+    /* color: rgb(61, 61, 210); */
+    background-image: url('https://media.istockphoto.com/id/1200990118/photo/next-level-loading-concept.jpg?s=612x612&w=0&k=20&c=-cFwNebV3pe4eJu9MgQVeH_7D50M-2fedNHL-XO7yiw=');
+    background-repeat: no-repeat;
+    background-size: 519px 427px;
+}
+#box31{
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+    color: brown;
+    
+}
