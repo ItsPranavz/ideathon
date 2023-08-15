@@ -1,0 +1,275 @@
+* {
+    font-family: 'Baloo Bhai';
+  }
+  
+  .body {
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .box {
+    display: block;
+    height: 80vh;
+    margin-top: 36px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  
+  #box1 {
+    position: relative;
+    margin-left: 8px;
+    background-color: rgb(239 229 215);
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #box2 {
+    position: relative;
+    margin-right: 8px;
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d29ya3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 40vw;
+  
+  }
+  
+  #box2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.40);
+  }
+  
+  #text {
+    z-index: 1;
+    display: block;
+    margin: auto;
+  
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+  }
+  
+  #navbar ul {
+    display: flex;
+  }
+  
+  #navbar ul li {
+    text-decoration: none;
+    list-style: none;
+  
+  
+  }
+  
+  .choice {
+    text-decoration: none;
+    margin: 29px;
+  
+  
+  }
+  
+  .choice button {
+    padding: 4px 6px;
+    color: rgb(21, 1, 1);
+    background-color: rgb(234, 208, 172);
+    border-radius: 23px;
+    transition-duration: 0.6s;
+  }
+  
+  .choice :hover {
+    cursor: pointer;
+    background-color: rgb(66, 9, 9);
+    color: rgb(234, 208, 172);
+    box-shadow: 0 12px 16px 2px rgba(0, 0, 0, 0.24), 0 17px 50px 2px rgba(0, 0, 0, 0.19);
+  
+  
+  }
+  
+  #navbar ul li button {
+    font-size: 26px;
+  }
+  
+  #navbar ul li button:active {
+    color: rgb(21, 1, 1);
+    background-color: rgb(234, 208, 172);
+    font-size: 26px;
+  
+  }
+  
+  .mainform {
+    
+    width: 50%;
+  
+    position: relative;
+    left: 207px;
+    height: 75%;
+    top: 30px;
+    box-shadow: -0.5rem -0.5rem rgb(207, 134, 25), 0.5rem 0.5rem rgb(207, 134, 25);
+  }
+  
+  .form {
+    position: relative;
+    top: 12px;
+    padding: 10px;
+  }
+  
+  .textbox {
+    border: 2px solid rgb(66, 9, 9);
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    padding: 10px;
+    color: black;
+    width: 360px;
+  
+  }
+  
+  .form-label {
+    position: absolute;
+    top: 1.2rem;
+    left: 3.4rem;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
+  
+  .textbox:focus~.form-label,
+  .textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label {
+    top: 0.10rem;
+    left: 7.0;
+    font-size: 15px;
+    font-weight: bold;
+    background: rgb(239 229 215);
+  
+  
+  }
+  
+  .textbox:focus {
+    border: 3px solid orange;
+    border-radius: 10px;
+  
+  }
+  
+  .form-button button {
+    position: relative;
+    right: 8px;
+    padding: 4px;
+    width: 381px;
+    font-size: 23px;
+    cursor: pointer;
+    border: 2px solid rgb(66, 9, 9);
+    background-color: rgb(239 229 215);
+    transition-duration: 0.6s;
+  }
+  
+  .form-button button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: orange;
+    font-weight: 900;
+    font-size: 30px;
+  
+  }
+  
+  .form-button button:active {
+    background-color: rgb(66, 9, 9);
+    color: white;
+    font-size: 20px;
+  
+  }
+  
+  .form-button {
+    padding: 40px;
+  }
+  
+  #line1,
+  #line2,
+  #line3,
+  #line4 {
+    font-size: 57px;
+    position: relative;
+    bottom: 65px;
+    line-height: 96px;
+    font-weight: 900;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    width: 0;
+    overflow: hidden;
+    margin: 0 auto;
+  
+    animation: typing 1.5s steps(30, end) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  #line2 {
+    animation-delay: 1.5s;
+  }
+  
+  #line3 {
+    animation-delay: 3.0s;
+  }
+  
+  #line4 {
+    animation-delay: 4.5s;
+    color: cyan;
+  }
+  
+  #emphasize {
+    font-size: 63px;
+    text-shadow: 2px 2px;
+    color: aqua;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0%;
+      border-right: 2px solid white;
+      border-radius: 34px;
+  
+    }
+  
+    to {
+      width: 100%;
+      border-right: 0px solid white;
+      border-radius: 34px;
+  
+    }
+  }
+  
+  #tnc {
+    display: inline-block;
+  }
+  
+  .mainform h2 {
+    text-decoration: underline;
+    color: rgb(66, 9, 9);
+  
+  }
+  
+  .mainform #nu {
+    text-decoration: none;
+    position: relative;
+    bottom:  28px;
+  
+  }
+  
+  .colourp {
+    color: rgb(207, 134, 25);
+  }

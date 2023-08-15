@@ -1,7 +1,320 @@
-import React from 'react'
+import React, { useState } from 'react';
+import './Contribute.css'; // Import your CSS file
 
 export default function Contribute() {
+
+  const [activeForm, setActiveForm] = useState('tnc');
+  const [form1Values, setForm1Values] = useState({
+    name1: '',
+    sid1: '',
+    email1: '',
+    ques: '',
+    ans: '',
+  });
+  const [form2Values, setForm2Values] = useState({
+    name2: '',
+    sid2: '',
+    email2: '',
+    rtag: '',
+    rlink: '',
+  });
+  const [form3Values, setForm3Values] = useState({
+    name3: '',
+    sid3: '',
+    email3: '',
+    csname: '',
+    isg: '',
+  });
+  const [form4Values, setForm4Values] = useState({
+    name4: '',
+    sid4: '',
+    email4: '',
+    fdbk: '',
+
+  });
+  /*const handleFormSubmit = () => {
+
+    alert("Thanks for your contribution! Welcome to the Community!");
+    // Handle form submission logic here
+  }; */
+  const handleForm1InputChange = (event) => {
+    const { name, value } = event.target;
+    setForm1Values((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+  const handleForm2InputChange = (event) => {
+    const { name, value } = event.target;
+    setForm2Values((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+  const handleForm3InputChange = (event) => {
+    const { name, value } = event.target;
+    setForm3Values((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+  const handleForm4InputChange = (event) => {
+    const { name, value } = event.target;
+    setForm4Values((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
+  const handleForm1Submit = () => {
+    // ... Handle form submission logic ...
+
+    // Clear input fields
+    setForm1Values({
+      name1: '',
+      sid1: '',
+      email1: '',
+      ques: '',
+      ans: '',
+    });
+    alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
+  };
+  const handleForm2Submit = () => {
+    // ... Handle form submission logic ...
+
+    // Clear input fields
+    setForm2Values({
+      name2: '',
+      sid2: '',
+      email2: '',
+      rtag: '',
+      rlink: '',
+    });
+    alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
+  };
+  const handleForm3Submit = () => {
+    // ... Handle form submission logic ...
+
+    // Clear input fields
+    setForm3Values({
+      name3: '',
+      sid3: '',
+      email3: '',
+      csname: '',
+      isg: '',
+    });
+    alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
+  };
+  const handleForm4Submit = () => {
+    // ... Handle form submission logic ...
+
+    // Clear input fields
+    setForm4Values({
+      name4: '',
+      sid4: '',
+      email4: '',
+      fdbk: '',
+
+    });
+    alert("Thank You for your valuable feedback! We will get back to you soon!")
+  };
+
+  const handleFormClick = (formId) => {
+    if (activeForm === formId) {
+      setActiveForm('tnc');
+    }
+    else {
+      setActiveForm(formId);
+    }
+
+  };
+  let formcontent = null;
+  if (activeForm === 'tnc') {
+    formcontent = <div className="mainform" id='tnc'>
+      <h2>Terms and Conditions regarding contributions</h2>
+      <p id="pt1">
+        <span className="colourp">-{'>'}</span> Uploading any material containing any sort of malicious , unsafe ,
+        or prohibited content is <span className="colourp">strictly prohibited.</span>
+      </p>
+      <p id="pt2">
+        <span className="colourp">-{'>'}</span> Trying to interfere with the server or any of the components of the
+        website through any means is <span className="colourp">not allowed </span>
+      </p>
+      <p id="pt3">
+        <span className="colourp">-{'>'}</span> With every contribution, the name and ID of the contributor shall
+        also be displayed for transparency purposes
+      </p>
+      <p id="pt4">
+        <span className="colourp">-{'>'}</span> The website moderators have the right to remove/delete any sort of
+        content from the website, in case of any <span className="colourp">complaint</span> or <span className="colourp">issue</span> regarding the same
+      </p>
+      <h2 id="nu"> Thank You !</h2>
+
+    </div>
+  }
+  else if (activeForm === 'form1') {
+    formcontent = <div className='mainform' id='form1'>
+      <div className="form">
+        <input type="text" placeholder=" " className="textbox" id="name1" name='name1' value={form1Values.name1} onChange={handleForm1InputChange} />
+        <label className="form-label">Name</label>
+      </div>
+      <div className="form">
+        <input type="text" placeholder=" " className="textbox" id="sid1" name='sid1' value={form1Values.sid1} onChange={handleForm1InputChange} />
+        <label className="form-label">Student ID</label>
+      </div>
+      <div className="form">
+        <input type="text" placeholder=" " className="textbox" id="email1" name='email1' value={form1Values.email1} onChange={handleForm1InputChange} />
+        <label className="form-label">Email</label>
+      </div>
+      <div className="form">
+        <input type="text" placeholder=" " className="textbox" id="ques" name='ques' value={form1Values.ques} onChange={handleForm1InputChange} />
+        <label className="form-label">Enter Your Question</label>
+      </div>
+      <div className="form">
+        <input type="text" placeholder=" " className="textbox" id="ans" name='ans' value={form1Values.ans} onChange={handleForm1InputChange} />
+        <label className="form-label">Enter Your Answer</label>
+      </div>
+      <div className="form-button" id="btn1">
+        <button onClick={handleForm1Submit}>SUBMIT</button>
+      </div>
+
+    </div>
+  }
+  else if (activeForm === 'form2') {
+    formcontent = <div className='mainform' id='form2'>
+      <div className="form">
+        <input type="text" name='name2' placeholder=" " className="textbox" id="name2" value={form2Values.name2} onChange={handleForm2InputChange} />
+        <label className="form-label">Name</label>
+      </div>
+      <div className="form">
+        <input type="text" name='sid2' placeholder=" " className="textbox" id="sid2" value={form2Values.sid2} onChange={handleForm2InputChange} />
+        <label className="form-label">Student ID</label>
+      </div>
+      <div className="form">
+        <input type="text" name='email2' placeholder=" " className="textbox" id="email2" value={form2Values.email2} onChange={handleForm2InputChange} />
+        <label className="form-label">Email</label>
+      </div>
+      <div className="form">
+        <input type="text" name='rtag' placeholder=" " className="textbox" id="rtag" value={form2Values.rtag} onChange={handleForm2InputChange} />
+        <label className="form-label">Resource Branch(Year)</label>
+      </div>
+      <div className="form">
+        <input type="text" name='rlink' placeholder=" " className="textbox" id="rlink" value={form2Values.rlink} onChange={handleForm2InputChange} />
+        <label className="form-label">Resource Link</label>
+      </div>
+
+      <div className="form-button" id="btn2">
+        <button onClick={handleForm2Submit}>SUBMIT</button>
+      </div>
+
+    </div>
+  }
+  else if (activeForm === 'form3') {
+    formcontent = <div className='mainform' id='form3'>
+      <div className="form">
+        <input type="text" name='name3' placeholder=" " className="textbox" id="name3" value={form3Values.name3} onChange={handleForm3InputChange} />
+        <label className="form-label">Name</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='sid3' placeholder=" " className="textbox" id="sid3" value={form3Values.sid3} onChange={handleForm3InputChange} />
+        <label className="form-label">Student ID</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='email3' placeholder=" " className="textbox" id="email3" value={form3Values.email3} onChange={handleForm3InputChange} />
+        <label className="form-label">Email</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='csname' placeholder=" " className="textbox" id="csname" value={form3Values.csname} onChange={handleForm3InputChange} />
+        <label className="form-label">Club/Society Name</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='isg' placeholder=" " className="textbox" id="isg" value={form3Values.isg} onChange={handleForm3InputChange} />
+        <label className="form-label">Input/Suggestion</label>
+      </div>
+
+      <div className="form-button" id="btn3">
+        <button onClick={handleForm3Submit}>SUBMIT</button>
+      </div>
+
+    </div>
+  }
+  else if (activeForm === 'form4') {
+    formcontent = <div className='mainform' id='form4'>
+      <div className="form">
+        <input type="text" name='name4' placeholder=" " className="textbox" id="name4" value={form4Values.name4} onChange={handleForm4InputChange} />
+        <label className="form-label">Name</label>
+      </div>
+      <div className="form">
+        <input type="text" name='sid4' placeholder=" " className="textbox" id="sid4" value={form4Values.sid4} onChange={handleForm4InputChange} />
+        <label className="form-label">Student ID</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='email4' placeholder=" " className="textbox" id="email4" value={form4Values.email4} onChange={handleForm4InputChange} />
+        <label className="form-label">Email</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='fdbk' placeholder=" " className="textbox" id="fdbk" value={form4Values.fdbk} onChange={handleForm4InputChange} />
+        <label className="form-label">Feedback</label>
+      </div>
+
+      <div className="form-button" id="btn4">
+        <button onClick={handleForm4Submit} >SUBMIT</button>
+      </div>
+    </div>
+  }
+
+
+
+
+
+
   return (
-    <div>Contribute page</div>
-  )
+    <div className="container">
+      <div className="box" id="box1">
+        <nav id="navbar">
+          <ul>
+            <li className="choice">
+              <button onClick={() => handleFormClick('form1')} id="choice1">
+                FAQ's
+              </button>
+            </li>
+            <li className="choice">
+              <button onClick={() => handleFormClick('form2')} id="choice2">
+                Resources
+              </button>
+            </li>
+            <li className="choice">
+              <button onClick={() => handleFormClick('form3')} id="choice3">
+                Clubs and Societies
+              </button>
+            </li>
+            <li className="choice">
+              <button onClick={() => handleFormClick('form4')} id="choice4">
+                Feedback
+              </button>
+            </li>
+          </ul>
+        </nav>
+        {formcontent}
+
+
+
+      </div>
+
+      <div className="box" id="box2">
+        <section id="text">
+          <p id="line1">Contribute and</p>
+          <p id="line2">become a part of</p>
+          <p id="line3">the amazing</p>
+          <p id="line4">Community !</p>
+        </section>
+      </div>
+    </div>
+  );
 }
+
