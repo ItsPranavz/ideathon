@@ -1,0 +1,17 @@
+.resourcesSubHeader {
+    display: flex;
+    flex-direction: row;
+    background-color: navy;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    width: 100%;
+}
+
+.resourcesSubHeaderTitle {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    padding: 30px;
+}

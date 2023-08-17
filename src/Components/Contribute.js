@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contribute.css'; // Import your CSS file
+import './Contribute.css';
 
 export default function Contribute() {
 
@@ -130,24 +130,24 @@ export default function Contribute() {
   let formcontent = null;
   if (activeForm === 'tnc') {
     formcontent = <div className="mainform" id='tnc'>
-      <h2>Terms and Conditions regarding contributions</h2>
+      <h2>Terms and Conditions</h2>
       <p id="pt1">
-        <span className="colourp">-{'>'}</span> Uploading any material containing any sort of malicious , unsafe ,
+        <span className="colourp">-{'>'}</span> Uploading any material containing any sort of malicious, unsafe,
         or prohibited content is <span className="colourp">strictly prohibited.</span>
       </p>
       <p id="pt2">
         <span className="colourp">-{'>'}</span> Trying to interfere with the server or any of the components of the
-        website through any means is <span className="colourp">not allowed </span>
+        website through any means is <span className="colourp">not allowed. </span>
       </p>
       <p id="pt3">
         <span className="colourp">-{'>'}</span> With every contribution, the name and ID of the contributor shall
-        also be displayed for transparency purposes
+        also be displayed for transparency purposes.
       </p>
       <p id="pt4">
         <span className="colourp">-{'>'}</span> The website moderators have the right to remove/delete any sort of
-        content from the website, in case of any <span className="colourp">complaint</span> or <span className="colourp">issue</span> regarding the same
+        content from the website, in case of any <span className="colourp">complaint</span> or <span className="colourp">issue</span> regarding the same.
       </p>
-      <h2 id="nu"> Thank You !</h2>
+      <h2 id="nu"><br/>Thank You!</h2>
 
     </div>
   }
@@ -167,11 +167,11 @@ export default function Contribute() {
       </div>
       <div className="form">
         <input type="text" placeholder=" " className="textbox" id="ques" name='ques' value={form1Values.ques} onChange={handleForm1InputChange} />
-        <label className="form-label">Enter Your Question</label>
+        <label className="form-label">Enter the question</label>
       </div>
       <div className="form">
         <input type="text" placeholder=" " className="textbox" id="ans" name='ans' value={form1Values.ans} onChange={handleForm1InputChange} />
-        <label className="form-label">Enter Your Answer</label>
+        <label className="form-label">Enter your answer</label>
       </div>
       <div className="form-button" id="btn1">
         <button onClick={handleForm1Submit}>SUBMIT</button>
@@ -195,7 +195,7 @@ export default function Contribute() {
       </div>
       <div className="form">
         <input type="text" name='rtag' placeholder=" " className="textbox" id="rtag" value={form2Values.rtag} onChange={handleForm2InputChange} />
-        <label className="form-label">Resource Branch(Year)</label>
+        <label className="form-label">Resource Branch & Year</label>
       </div>
       <div className="form">
         <input type="text" name='rlink' placeholder=" " className="textbox" id="rlink" value={form2Values.rlink} onChange={handleForm2InputChange} />
@@ -268,51 +268,50 @@ export default function Contribute() {
     </div>
   }
 
-
-
-
-
-
   return (
-    <div className="container">
-      <div className="box" id="box1">
-        <nav id="navbar">
-          <ul>
-            <li className="choice">
-              <button onClick={() => handleFormClick('form1')} id="choice1">
-                FAQ's
-              </button>
-            </li>
-            <li className="choice">
-              <button onClick={() => handleFormClick('form2')} id="choice2">
-                Resources
-              </button>
-            </li>
-            <li className="choice">
-              <button onClick={() => handleFormClick('form3')} id="choice3">
-                Clubs and Societies
-              </button>
-            </li>
-            <li className="choice">
-              <button onClick={() => handleFormClick('form4')} id="choice4">
-                Feedback
-              </button>
-            </li>
-          </ul>
-        </nav>
-        {formcontent}
-
-
-
+    <div className='pageContainer'>
+      <div className="contributeSubHeader">
+      <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg>
+        <h2 className='contributeSubHeaderTitle'> Help build the ultimate one stop resource repository, <br/> for all college students, one contribution at a time. </h2>
       </div>
+      <div className="contributeContainer">
+        <div className="contributeBox" id="contributeBox1">
+          <nav id="contributeNavbar">
+            <ul>
+              <li className="choice">
+                <button onClick={() => handleFormClick('form1')} id="choice1">
+                  FAQ's
+                </button>
+              </li>
+              <li className="choice">
+                <button onClick={() => handleFormClick('form2')} id="choice2">
+                  Resources
+                </button>
+              </li>
+              <li className="choice">
+                <button onClick={() => handleFormClick('form3')} id="choice3">
+                  Societies
+                </button>
+              </li>
+              <li className="choice">
+                <button onClick={() => handleFormClick('form4')} id="choice4">
+                  Feedback
+                </button>
+              </li>
+            </ul>
+          </nav>
+          {formcontent}
+        </div>
 
-      <div className="box" id="box2">
-        <section id="text">
-          <p id="line1">Contribute and</p>
-          <p id="line2">become a part of</p>
-          <p id="line3">the amazing</p>
-          <p id="line4">Community !</p>
-        </section>
+        <div className="contributeBox" id="contributeBox2">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d29ya3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"></img>
+          <section id="contributeText">
+            <p id="contributeLine1">Contribute and</p>
+            <p id="contributeLine2">become a part of</p>
+            <p id="contributeLine3">the amazing</p>
+            <p id="contributeLine4">Community!</p>
+          </section>
+        </div>
       </div>
     </div>
   );
