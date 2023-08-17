@@ -8,8 +8,8 @@
     margin: 0px auto;
     /* border: 2px solid green; */
     height: 70px;
-    /* position:absolute; */
-    bottom: 1px;
+    position: relative;
+    bottom: 0px;
     z-index: 1;
     left: 0px;
     right: 0px;
@@ -28,38 +28,34 @@
   }
   .footbar li.rights{
     /* border: 2px solid green; */
-    position: relative;
-    left: 700px;
-    font-size: 25px;
+    float: right;
+    margin-right: 20px;
   }
   .footbar li.Copyright{
     /* border: 2px solid green; */
-    position: relative;
-    left: 600px;
+    float: right;
+    margin-right: 40px;
+  }
+  img{
+    width: 46px;
+    height: 35px;
+    float: left;
   }
   .footbar li.name{
     /* border: 2px solid green; */
-    left: 206px;
-    font-size: 27px;
-    color: orange;
+    float: left;
+    margin-right: 20px;
   }
   .footbar li.name:hover{
     cursor: pointer;
     color:rgb(168, 213, 239);
     font-weight: 900;
-    text-decoration: underline;
-    cursor: default;
+    text-decoration: none;
+    cursor: pointer;
   }
   .check{
     display: inline-block;
     position:relative;
     top: 1500px;
-  }
-  img{
-    width: 46px;
-    height: 35px;
-    position: relative;
-    bottom: -6px;
-    right: -177px;
   }
   
