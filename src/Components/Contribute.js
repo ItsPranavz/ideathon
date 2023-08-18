@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState , useRef } from 'react';
 import './Contribute.css';
+import { Firestore } from '../firebase';
+import { getFirestore,collection,onSnapshot,deleteDoc,addDoc,doc } from 'firebase/firestore';
 
 export default function Contribute() {
 
   const [activeForm, setActiveForm] = useState('tnc');
+  const db =getFirestore()
+  const colref1=collection(db,'contribute-page-faq')
+  const colref2=collection(db,'contribute-page-resources')
+  const colref3=collection(db,'contribute-page-societies')
+  const colref4=collection(db,'contribute-page-feedback')
+  const addentry=document.getElementsByClassName('textbox')
   const [form1Values, setForm1Values] = useState({
     name1: '',
     sid1: '',
@@ -76,6 +84,13 @@ export default function Contribute() {
       ques: '',
       ans: '',
     });
+    addDoc(colref1,{
+      name : addentry.name1.value,
+      sid : addentry.sid1.value,
+      email : addentry.email1.value,
+      ques : addentry.ques.value,
+      ans : addentry.ans.value,
+    })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
   const handleForm2Submit = () => {
@@ -89,6 +104,13 @@ export default function Contribute() {
       rtag: '',
       rlink: '',
     });
+    addDoc(colref2,{
+      name : addentry.name2.value,
+      sid : addentry.sid2.value,
+      email : addentry.email2.value,
+      resource_branch : addentry.rtag.value,
+      resource_year: addentry.rlink.value,
+    })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
   const handleForm3Submit = () => {
@@ -102,6 +124,13 @@ export default function Contribute() {
       csname: '',
       isg: '',
     });
+    addDoc(colref3,{
+      name : addentry.name3.value,
+      sid : addentry.sid3.value,
+      email : addentry.email3.value,
+      csname: addentry.csname.value,
+      input_suggestion: addentry.isg.value,
+    })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
   const handleForm4Submit = () => {
@@ -115,6 +144,13 @@ export default function Contribute() {
       fdbk: '',
 
     });
+    addDoc(colref4,{
+      name : addentry.name4.value,
+      sid : addentry.sid4.value,
+      email : addentry.email4.value,
+      feedback : addentry.fdbk.value,
+      
+    })
     alert("Thank You for your valuable feedback! We will get back to you soon!")
   };
 
