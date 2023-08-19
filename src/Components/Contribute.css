@@ -160,7 +160,7 @@
   .form-label {
     position: absolute;
     top: 1.2rem;
-    left: 3.4rem;
+    left: 3.8rem;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   }
@@ -171,7 +171,7 @@
     left: 7.0;
     font-size: 15px;
     font-weight: bold;
-    background: rgb(239 229 215);
+    background: white
   
   
   }
@@ -202,6 +202,7 @@
     font-weight: 900;
     font-size: 30px;
     color: white;
+    
   }
   
   .form-button button:active {
@@ -224,7 +225,7 @@
     bottom: 65px;
     font-weight: 900;
     color: rgb(62, 57, 84);
-    font-family: sans-serif;
+    font-family: 'Audiowide';
     width: 0;
     overflow: hidden;
     margin: 0 auto;
