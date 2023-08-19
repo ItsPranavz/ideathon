@@ -23,6 +23,7 @@ export default function Contribute() {
     name2: '',
     sid2: '',
     email2: '',
+    rtitle: '',
     rtagb: '',
     rtags: '',
     rlink: '',
@@ -104,6 +105,7 @@ export default function Contribute() {
       name2: '',
       sid2: '',
       email2: '',
+      rtitle: '',
       rtagb: '',
       rtags: '',
       rlink: '',
@@ -112,6 +114,7 @@ export default function Contribute() {
       name : addentry.name2.value,
       sid : addentry.sid2.value,
       email : addentry.email2.value,
+      resource_title : addentry.rtitle.value,
       resource_branch : addentry.rtagb.value,
       resource_sem : addentry.rtags.value,
       resource_link: addentry.rlink.value,
@@ -238,6 +241,10 @@ export default function Contribute() {
       <div className="form">
         <input type="text" name='email2' placeholder=" " className="textbox" id="email2" value={form2Values.email2} onChange={handleForm2InputChange} />
         <label className="form-label">Email</label>
+      </div>
+      <div className="form">
+        <input type="text" name='rtitle' placeholder=" " className="textbox" id="rtitle" value={form2Values.rtitle} onChange={handleForm2InputChange} />
+        <label className="form-label">Resource Title</label>
       </div>
       <div className="form">
         <input type="text" name='rtagb' placeholder=" " className="textbox" id="rtagb" value={form2Values.rtagb} onChange={handleForm2InputChange} />
