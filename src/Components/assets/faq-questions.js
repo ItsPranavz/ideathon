@@ -1,4 +1,4 @@
-export const Faqs = [
+export let Faqs = [
     {
       id: 1,
       question: 'What is the admission process for PEC Chandigarh?',

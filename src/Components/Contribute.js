@@ -23,7 +23,8 @@ export default function Contribute() {
     name2: '',
     sid2: '',
     email2: '',
-    rtag: '',
+    rtagb: '',
+    rtags: '',
     rlink: '',
   });
   const [form3Values, setForm3Values] = useState({
@@ -32,6 +33,8 @@ export default function Contribute() {
     email3: '',
     csname: '',
     isg: '',
+    lgo: '',
+    wbl: '',
   });
   const [form4Values, setForm4Values] = useState({
     name4: '',
@@ -101,15 +104,17 @@ export default function Contribute() {
       name2: '',
       sid2: '',
       email2: '',
-      rtag: '',
+      rtagb: '',
+      rtags: '',
       rlink: '',
     });
     addDoc(colref2,{
       name : addentry.name2.value,
       sid : addentry.sid2.value,
       email : addentry.email2.value,
-      resource_branch : addentry.rtag.value,
-      resource_year: addentry.rlink.value,
+      resource_branch : addentry.rtagb.value,
+      resource_sem : addentry.rtags.value,
+      resource_link: addentry.rlink.value,
     })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
@@ -123,6 +128,8 @@ export default function Contribute() {
       email3: '',
       csname: '',
       isg: '',
+      lgo: '',
+      wbl: '',
     });
     addDoc(colref3,{
       name : addentry.name3.value,
@@ -130,6 +137,8 @@ export default function Contribute() {
       email : addentry.email3.value,
       csname: addentry.csname.value,
       input_suggestion: addentry.isg.value,
+      logo_link: addentry.lgo.value,
+      website_link: addentry.wbl.value,
     })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
@@ -230,8 +239,12 @@ export default function Contribute() {
         <label className="form-label">Email</label>
       </div>
       <div className="form">
-        <input type="text" name='rtag' placeholder=" " className="textbox" id="rtag" value={form2Values.rtag} onChange={handleForm2InputChange} />
-        <label className="form-label">Resource Branch & Year</label>
+        <input type="text" name='rtagb' placeholder=" " className="textbox" id="rtagb" value={form2Values.rtagb} onChange={handleForm2InputChange} />
+        <label className="form-label">Resource Branch</label>
+      </div>
+      <div className="form">
+        <input type="text" name='rtags' placeholder=" " className="textbox" id="rtags" value={form2Values.rtags} onChange={handleForm2InputChange} />
+        <label className="form-label">Resource Semester</label>
       </div>
       <div className="form">
         <input type="text" name='rlink' placeholder=" " className="textbox" id="rlink" value={form2Values.rlink} onChange={handleForm2InputChange} />
@@ -263,12 +276,22 @@ export default function Contribute() {
 
       <div className="form">
         <input type="text" name='csname' placeholder=" " className="textbox" id="csname" value={form3Values.csname} onChange={handleForm3InputChange} />
-        <label className="form-label">Club/Society Name</label>
+        <label className="form-label">Club Name</label>
       </div>
 
       <div className="form">
         <input type="text" name='isg' placeholder=" " className="textbox" id="isg" value={form3Values.isg} onChange={handleForm3InputChange} />
-        <label className="form-label">Input/Suggestion</label>
+        <label className="form-label">Description</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='lgo' placeholder=" " className="textbox" id="lgo" value={form3Values.lgo} onChange={handleForm3InputChange} />
+        <label className="form-label">Logo Link</label>
+      </div>
+
+      <div className="form">
+        <input type="text" name='wbl' placeholder=" " className="textbox" id="wbl" value={form3Values.wbl} onChange={handleForm3InputChange} />
+        <label className="form-label">Website Link</label>
       </div>
 
       <div className="form-button" id="btn3">

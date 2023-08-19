@@ -2,7 +2,9 @@ import React from 'react';
 import './FAQ.css';
 import { Faqs } from './assets/faq-questions';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { 
+  useState, useEffect 
+} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

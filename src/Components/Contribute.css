@@ -86,12 +86,12 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: -15px;
+    top: -30px;
   }
   
   #contributeNavbar ul {
     display: flex;
-    margin-left: 60px;
+    margin-left: 75px;
   }
   
   #contributeNavbar ul li {
@@ -135,8 +135,8 @@
     padding: 30px;
     position: relative;
     left: 150px;
-    height: 72%;
-    top: 60px;
+    height: 77%;
+    top: 40px;
     box-shadow: -0.5rem -0.5rem rgb(31, 95, 213), 0.5rem 0.5rem rgb(63, 117, 218);
   }
   
