@@ -8,7 +8,7 @@ export let resources = [
       title: 'Applied Chemistry-I: PPTs + PDFs',
       Branch: 'DS',
       Sem: 1,
-      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+      link: 'https://drive.google.com/drive/folders/1vfPEL39R4b3p2_RCkI3V-C3BRxNBALZQ?usp=drive_link',
     },  {
       title: 'Probability and Statistics: Reference Book + Solutions',
       Branch: 'CSE',
@@ -23,13 +23,13 @@ export let resources = [
       title: 'Applied Chemistry-I: PPTs + PDFs',
       Branch: 'CSE',
       Sem: 1,
-      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+      link: 'https://drive.google.com/drive/folders/1vfPEL39R4b3p2_RCkI3V-C3BRxNBALZQ?usp=drive_link',
     }, 
     {
       title: 'Applied Chemistry-I: PPTs + PDFs',
       Branch: 'DS',
       Sem: 1,
-      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+      link: 'https://drive.google.com/drive/folders/1vfPEL39R4b3p2_RCkI3V-C3BRxNBALZQ?usp=drive_link',
     },    {
       title: 'Probability and Statistics: Reference Book + Solutions',
       Branch: 'DS',
