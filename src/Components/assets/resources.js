@@ -1,38 +1,69 @@
 export const resources = [
     {
-      serialNo: 1,
-      name: 'ACM CSS',
+      title: 'Introduction To Computing: PPTs + PDFs',
       Branch: 'CSE',
       Sem: 1,
-      description: 'Maths pdf link',
-
-      website: 'https://www.google.com',
-    },
+      link: 'https://drive.google.com/drive/folders/1NObP0gXG06e_mMLDgDeIvjKVn35IeCAF?usp=drive_link',
+    },     {
+      title: 'Applied Chemistry-I: PPTs + PDFs',
+      Branch: 'DS',
+      Sem: 1,
+      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+    },  {
+      title: 'Probability and Statistics: Reference Book + Solutions',
+      Branch: 'CSE',
+      Sem: 2,
+      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+    },     {
+      title: 'Electromagnetic Theory and Quantum Physics: Notes+Reference Book+Assignments',
+      Branch: 'EE',
+      Sem: 2,
+      link: 'https://drive.google.com/drive/folders/1Qv0TFGTj7iqukEiVKB9M29vhRT47FGk-?usp=drive_link',
+    },     {
+      title: 'Applied Chemistry-I: PPTs + PDFs',
+      Branch: 'CSE',
+      Sem: 1,
+      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+    }, 
     {
-        serialNo: 2,
-        name: 'ACM',
-        Branch: 'ECE',
-        Sem: 2,
-        description: 'chem pdf link',
-  
-        website: 'https://www.google.com',
-      },
-      {
-        serialNo: 3,
-        name: 'ACM',
-        Branch: 'CSE',
-        Sem: 2,
-        description: 'chem pdf link',
-  
-        website: 'https://www.google.com',
-      },   {
-        serialNo: 4,
-        name: 'ACM',
-        Branch: 'DS',
-        Sem: 1,
-        description: 'chem pdf link',
-  
-        website: 'https://www.google.com',
-      }
-    
+      title: 'Applied Chemistry-I: PPTs + PDFs',
+      Branch: 'DS',
+      Sem: 1,
+      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+    },    {
+      title: 'Probability and Statistics: Reference Book + Solutions',
+      Branch: 'DS',
+      Sem: 2,
+      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+    },    {
+      title: 'Probability and Statistics: Reference Book + Solutions',
+      Branch: 'ECE',
+      Sem: 2,
+      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+    },    {
+      title: 'Introduction To Computing: PPTs + PDFs',
+      Branch: 'ECE',
+      Sem: 1,
+      link: 'https://drive.google.com/drive/folders/1NObP0gXG06e_mMLDgDeIvjKVn35IeCAF?usp=drive_link',
+    },    {
+      title: 'Introduction To Computing: PPTs + PDFs',
+      Branch: 'EE',
+      Sem: 1,
+      link: 'https://drive.google.com/drive/folders/1NObP0gXG06e_mMLDgDeIvjKVn35IeCAF?usp=drive_link',
+    },      {
+      title: 'Calculus and Ordinary Differential Equations: Reference Books + Solutions',
+      Branch: 'MECH',
+      Sem: 1,
+      link: 'https://drive.google.com/drive/folders/11tn04X2ocGLnbDG538J2j4-9SW0cMIGh?usp=drive_link',
+    }, {
+      title: 'Introduction To Computing: PPTs + PDFs',
+      Branch: 'META',
+      Sem: 2,
+      link: 'https://drive.google.com/drive/folders/1NObP0gXG06e_mMLDgDeIvjKVn35IeCAF?usp=drive_link',
+    },    {
+      title: 'Applied Chemistry-I: PPTs + PDFs',
+      Branch: 'PROD',
+      Sem: 1,
+      link: 'https://drive.google.com/drive/folders/1ZQ6bM9crSNfu2zmAL00zgIWWnm1xJHhj?usp=drive_link',
+    }
   ];

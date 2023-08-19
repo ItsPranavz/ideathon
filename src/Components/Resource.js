@@ -43,9 +43,8 @@ function Card(props) {
             <h1> {props.title} </h1>
             <h1> {props.Branch} </h1>
             <h1> {props.Sem} </h1>
-            <p> {props.desc} </p>
             <a href={props.link}>
-              <h3> Read more </h3>
+              <h3> Click here to view Resource </h3>
             </a>
           </div>
         </>)
@@ -60,9 +59,8 @@ function Card(props) {
           <h1> {props.title} </h1>
           <h1> {props.Branch} </h1>
           <h1> {props.Sem} </h1>
-          <p> {props.desc} </p>
           <a href={props.link}>
-            <h3> Read more </h3>
+            <h3> Click here to view Resource </h3>
           </a>
         </div>
       </>)
@@ -75,6 +73,11 @@ function Takeinput1() {
     { label: 'Semester 1', value: 1 },
     { label: 'Semester 2', value: 2 },
     { label: 'Semester 3', value: 3 },
+    { label: 'Semester 4', value: 4 },
+    { label: 'Semester 5', value: 5 },
+    { label: 'Semester 6', value: 6 },
+    { label: 'Semester 7', value: 7 },
+    { label: 'Semester 8', value: 8 },
   ];
 
   const handleChange = (event) => {
@@ -92,7 +95,6 @@ function Takeinput1() {
         value={seme}
         onChange={handleChange}
       />
-      <p>Testing Semester: {seme}!  Count: {count1}  count3:{count3}</p>
     </div>
   );
 };
@@ -115,6 +117,11 @@ function Takeinput2() {
     { label: 'CSE', value: 'CSE' },
     { label: 'DS', value: 'DS' },
     { label: 'ECE', value: 'ECE' },
+    { label: 'EE', value: 'EE' },
+    { label: 'MECH', value: 'MECH' },
+    { label: 'META', value: 'META' },
+    { label: 'PROD', value: 'PROD' },
+    { label: 'AERO', value: 'AERO' }
   ];
 
   const handleChange = (event) => {
@@ -132,7 +139,6 @@ function Takeinput2() {
         value={Branch}
         onChange={handleChange}
       />
-      <p>Testing Branch: {Branch}! count2: {count2}</p>
 
 
     </div>
@@ -151,7 +157,6 @@ const handleReset = (event) => {
 }
 
 function handlesubmit() {
-  alert("works")
   if(count1 && count2){
     if(count3===0){
       setCount3(1);
@@ -178,12 +183,10 @@ function handlesubmit() {
       <div className='resourcesCardSection'>
       {resources.map((el) => (
         <Card
-          id={el.serialNo}
-          title={el.name}
+          title={el.title}
           Branch={el.Branch}
           Sem={el.Sem}
-          desc={el.description}
-          link={el.website}
+          link={el.link}
         />
       ))}
     </div>
