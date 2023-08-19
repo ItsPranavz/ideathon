@@ -44,7 +44,7 @@ function Card(props) {
             <h1> {props.Branch} </h1>
             <h1> {props.Sem} </h1>
             <a href={props.link}>
-              <h3> Click here to view Resource </h3>
+              <h3> View resource </h3>
             </a>
           </div>
         </>)
@@ -60,7 +60,7 @@ function Card(props) {
           <h1> {props.Branch} </h1>
           <h1> {props.Sem} </h1>
           <a href={props.link}>
-            <h3> Click here to view Resource </h3>
+            <h3> View resource </h3>
           </a>
         </div>
       </>)
@@ -88,9 +88,9 @@ function Takeinput1() {
     }
   };
   return (
-    <div>
+    <div className='resourcesSem'>
       <Dropdown
-        label="Enter your Semester"
+        label="Semester "
         options={options}
         value={seme}
         onChange={handleChange}
@@ -132,9 +132,9 @@ function Takeinput2() {
     }
   };
   return (
-    <div>
+    <div className='resourcesBranch'>
       <Dropdown
-        label="Enter your Semester"
+        label="Branch "
         options={options}
         value={Branch}
         onChange={handleChange}
@@ -174,11 +174,16 @@ function handlesubmit() {
           <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" /></svg>
           <h2 className='resourcesSubHeaderTitle'> Find all resources you need for your classes, <br /> be it books, assignments, practice papers etc. </h2>
         </div>
-        {Takeinput1()}
-        {Takeinput2()}
-        <button className='button' onClick={handleSubmit}>Submit</button>
-        <button className='button' onClick={handleReset}>Reset</button>
-
+        <div className="resourcesControls">
+          <h3 id="resourcesControlsTitle">Apply Filters to Resources</h3>
+          <p id="resourcesControlsPlus"> + </p>
+          <div className='resourcesInput'>
+            {Takeinput1()} 
+            {Takeinput2()}
+          </div>
+          <button className='resourcesButton' onClick={handleSubmit}>Apply</button>
+          <button className='resourcesButton' onClick={handleReset}>Reset</button>
+        </div>
         <>
       <div className='resourcesCardSection'>
       {resources.map((el) => (
