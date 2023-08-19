@@ -2,6 +2,50 @@
   outline: none;
 }
 
+.resourcesMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #358bb2;
+  box-shadow: 5px 5px 10px rgb(189, 191, 192);
+  border-radius: 30px;
+  height: auto;
+  width: 60%;
+  margin: 50px;
+}
+
+.resourcesSecDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+  margin-top: -10px;
+}
+
+.resourcesSecDiv h3 {
+  font-size: 2em;
+  font-family: 'Baloo Bhai';
+  color: white;
+  padding: 10px;
+}
+
+.resourcesSecDiv p {
+  font-size: 3.5em;
+  font-family: 'Baloo Bhai';
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.resourcesSecDiv p:hover {
+  transform: rotate(180deg);
+  font-size: 4em;
+  color: #cacedde3;
+}
+
 .resourcesSubHeader {
     display: flex;
     flex-direction: row;
@@ -20,7 +64,16 @@
     padding: 30px;
 }
 
-.resourcesControls {
+.resourcesCardSection {
+  display: grid;
+  grid-template-columns: 38rem 38rem;
+  justify-items: center;
+  align-items: center;
+  margin: 60px;
+  margin-bottom: 5rem;
+}
+
+.resourcesControls-show {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,19 +81,83 @@
   margin: 30px;
 }
 
-.resourcesControls label {
+.resourcesControls {
+  display: none;
+}
+
+.resourcesControls-show label {
   font-size: 1.2em;
   margin: 15px;
 }
 
-.resourcesControls select {
+.resourcesControls-show select {
   font-size: 0.8em;
   margin: 15px;
   padding: 5px;
 }
 
+.resourcesCard {
+  background-color: #C7D2F366;
+  width: 25rem;;
+  height: 40rem;;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(189, 212, 227);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 5rem;
+}
+
+.resourcesCard h1 {
+  font-size: 2.2em;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.resourcesCard h2 {
+  background-color: rgb(4, 108, 145);
+  color: white;
+  font-size: 1.2em;
+  border-radius: 30px;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.resourcesCard a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(60, 57, 57);
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+  margin: 10px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.resourcesCard a:hover {
+  font-size: 1.2em;
+}
+
+.resourcesCard:hover {
+  background-color: #C7D2F366;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(140, 145, 159);
+}
+
+.resourcesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .resourcesInput {
   background-color: rgb(214, 217, 218);
+  padding: 5px;
   border-radius: 30px;
   display: flex;
   flex-direction: row;
@@ -59,6 +176,7 @@
   padding: 15px;
   margin: 10px;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .resourcesButton:hover {

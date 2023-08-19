@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import { Faqs } from './Components/assets/faq-questions';
 import { clubs } from './Components/assets/clubs-societies-info';
+import { resources } from './Components/assets/resources';
 import './App.css';
 import Header from './Components/Header'
 import Footer from './Components/Footer'
@@ -52,11 +53,25 @@ async function fetchClubsData() {
   })
 };
 
+async function fetchResourcesData() {
+  const q = query(collection(db, 'contribute-page-resources'), where("show_resource", "==", true));
+  const snapshot = await getDocs(q);
+  snapshot.forEach((doc)=>{
+    resources.push({
+      title: doc.data().resource_title,
+      Branch: doc.data().resource_branch,
+      Sem: doc.data().resource_sem,
+      link: doc.data().resource_link
+    })
+  })
+};
+
 function App() {
 
   useEffect(()=>{
     fetchFaqData();
     fetchClubsData();
+    fetchResourcesData();
   })
 
   return (
