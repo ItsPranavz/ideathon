@@ -16,12 +16,19 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { collection, getDocs, getFirestore } from 'firebase/firestore'
+import { 
+  collection, 
+  getDocs, 
+  getFirestore,
+  query,
+  where
+} from 'firebase/firestore'
 
 const db = getFirestore();
 
 async function fetchFaqData() {
-  const snapshot = await getDocs(collection(db, 'contribute-page-faq'));
+  const q = query(collection(db, 'contribute-page-faq'), where("show_faq", "==", true));
+  const snapshot = await getDocs(q);
   snapshot.forEach((doc)=>{
     Faqs.push({
       id: doc.id,
@@ -32,7 +39,8 @@ async function fetchFaqData() {
 };
 
 async function fetchClubsData() {
-  const snapshot = await getDocs(collection(db, 'contribute-page-societies'));
+  const q = query(collection(db, 'contribute-page-societies'), where("show_club", "==", true));
+  const snapshot = await getDocs(q);
   snapshot.forEach((doc)=>{
     clubs.push({
       serialNo: doc.id,
