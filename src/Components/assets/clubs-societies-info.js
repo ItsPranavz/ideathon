@@ -1,4 +1,4 @@
-export const clubs = [
+export let clubs = [
     {
       serialNo: 1,
       name: 'ACM CSS',
