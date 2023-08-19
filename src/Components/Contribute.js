@@ -41,7 +41,6 @@ export default function Contribute() {
     sid4: '',
     email4: '',
     fdbk: '',
-
   });
   /*const handleFormSubmit = () => {
 
@@ -93,6 +92,7 @@ export default function Contribute() {
       email : addentry.email1.value,
       ques : addentry.ques.value,
       ans : addentry.ans.value,
+      show_faq: false,
     })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
@@ -115,6 +115,7 @@ export default function Contribute() {
       resource_branch : addentry.rtagb.value,
       resource_sem : addentry.rtags.value,
       resource_link: addentry.rlink.value,
+      show_resource: false,
     })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
@@ -139,6 +140,7 @@ export default function Contribute() {
       input_suggestion: addentry.isg.value,
       logo_link: addentry.lgo.value,
       website_link: addentry.wbl.value,
+      show_club: false,
     })
     alert("Thank You for your contribution! Welcome to the Community! You will be notified once your input gets updated")
   };
@@ -151,7 +153,6 @@ export default function Contribute() {
       sid4: '',
       email4: '',
       fdbk: '',
-
     });
     addDoc(colref4,{
       name : addentry.name4.value,
