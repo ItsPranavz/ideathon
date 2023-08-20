@@ -156,7 +156,7 @@
 }
 
 .resourcesInput {
-  background-color: rgb(214, 217, 218);
+  background-color: rgb(238, 241, 243);
   padding: 5px;
   border-radius: 30px;
   display: flex;
@@ -167,11 +167,10 @@
 }
 
 .resourcesButton {
-  color: white;
-  background-color: #358bb2;
-  box-shadow: 5px 5px 10px rgb(189, 191, 192);
+  color: black;
+  background-color: #dde5e9;
   font-size: 1.2em;
-  font-family: sans-serif;
+  font-family: 'baloo bhai';
   border-radius: 25px;
   padding: 15px;
   margin: 10px;
@@ -180,7 +179,6 @@
 }
 
 .resourcesButton:hover {
-  background-color: #41aadb;
-  box-shadow: 5px 5px 10px rgb(138, 138, 138)
+  background-color: #ffffff;
 }
 
